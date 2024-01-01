@@ -1,7 +1,7 @@
 {
 	"entity_sounds": {
 		"entities": {
-			"zuz:goblins_mod": {
+			"zuz:goblin": {
 				"events": {
 					"admire": "mob.piglin.admiring_item",
 					"ambient": "mob.piglin.ambient",

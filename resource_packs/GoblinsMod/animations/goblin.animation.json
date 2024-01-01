@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.goblins_mod.crossbow.charge": {
+		"animation.goblin.crossbow.charge": {
 			"bones": {
 				"leftarm": {
 					"rotation": ["math.lerp(-90.0 + 34.38, -90.0, variable.crossbow_charge)  -this", "math.lerp(22.92, 48.70, variable.crossbow_charge) -this", 0]
@@ -12,7 +12,7 @@
 			},
 			"loop": true
 		},
-		"animation.goblins_mod.crossbow.hold": {
+		"animation.goblin.crossbow.hold": {
 			"bones": {
 				"leftarm": {
 					"rotation": ["-85.94 + query.target_x_rotation -this", "34.38 + math.clamp(query.target_y_rotation, -45, 25) -this", 0]
@@ -23,7 +23,7 @@
 			},
 			"loop": true
 		},
-		"animation.goblins_mod.sword.attack": {
+		"animation.goblin.sword.attack": {
 			"bones": {
 				"leftarm": {
 					"rotation": [
@@ -42,7 +42,7 @@
 			},
 			"loop": true
 		},
-		"animation.goblins_mod.hand.attack": {
+		"animation.goblin.hand.attack": {
 			"bones": {
 				"leftarm": {
 					"rotation": ["-(math.sin((1 - math.pow((1 - variable.attack_time), 4)) * 180) * 1.2 + math.sin(variable.attack_time * 180)) * 10.0", 0, 0]
@@ -57,7 +57,7 @@
 			},
 			"loop": true
 		},
-		"animation.goblins_mod.move": {
+		"animation.goblin.move": {
 			"loop": true,
 			"bones": {
 				"leftear": {
@@ -80,7 +80,7 @@
 				}
 			}
 		},
-		"animation.goblins_mod.admire": {
+		"animation.goblin.admire": {
 			"loop": true,
 			"bones": {
 				"leftarm": {
@@ -91,7 +91,7 @@
 				}
 			}
 		},
-		"animation.goblins_mod.celebrate_hunt": {
+		"animation.goblin.celebrate_hunt": {
 			"loop": true,
 			"bones": {
 				"leftear": {
@@ -102,7 +102,7 @@
 				}
 			}
 		},
-		"animation.goblins_mod.celebrate_hunt_special": {
+		"animation.goblin.celebrate_hunt_special": {
 			"loop": true,
 			"bones": {
 				"leftear": {

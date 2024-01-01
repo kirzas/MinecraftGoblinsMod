@@ -2,7 +2,7 @@
 	"format_version": "1.16.0",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "zuz:goblins_mod",
+			"identifier": "zuz:goblin",
 			"runtime_identifier": "minecraft:piglin",
 			"is_spawnable": true,
 			"is_summonable": true,
@@ -386,7 +386,7 @@
 				]
 			},
 			"minecraft:loot": {
-				"table": "loot_tables/entities/goblins_mod.json"
+				"table": "loot_tables/entities/goblin.json"
 			},
 			"minecraft:navigation.walk": {
 				"can_path_over_water": true,
