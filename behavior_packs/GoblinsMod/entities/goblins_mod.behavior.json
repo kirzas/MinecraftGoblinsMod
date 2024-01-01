@@ -9,49 +9,6 @@
 			"is_experimental": false
 		},
 		"component_groups": {
-			"zombification_sensor": {
-				"minecraft:environment_sensor": {
-					"triggers": {
-						"filters": {
-							"test": "in_nether",
-							"subject": "self",
-							"operator": "==",
-							"value": false
-						},
-						"event": "start_zombification_event"
-					}
-				}
-			},
-			"start_zombification": {
-				"minecraft:is_shaking": {},
-				"minecraft:environment_sensor": {
-					"triggers": {
-						"filters": {
-							"test": "in_nether",
-							"subject": "self",
-							"operator": "==",
-							"value": true
-						},
-						"event": "stop_zombification_event"
-					}
-				},
-				"minecraft:timer": {
-					"looping": false,
-					"time": 15,
-					"time_down_event": {
-						"event": "become_zombie_event"
-					}
-				}
-			},
-			"become_zombie": {
-				"minecraft:transformation": {
-					"into": "minecraft:zombie_pigman",
-					"transformation_sound": "converted_to_zombified",
-					"keep_level": true,
-					"drop_inventory": true,
-					"preserve_equipment": true
-				}
-			},
 			"ranged_unit": {
 				"minecraft:behavior.ranged_attack": {
 					"priority": 8,
@@ -955,22 +912,22 @@
 			},
 			"spawn_adult_ranged": {
 				"add": {
-					"component_groups": ["piglin_adult", "zombification_sensor", "alert_for_attack_targets", "ranged_unit", "attack_cooldown", "hunter", "interactable_piglin"]
+					"component_groups": ["piglin_adult", "alert_for_attack_targets", "ranged_unit", "attack_cooldown", "hunter", "interactable_piglin"]
 				}
 			},
 			"spawn_adult_ranged_no_hunting": {
 				"add": {
-					"component_groups": ["piglin_adult", "zombification_sensor", "alert_for_attack_targets", "ranged_unit", "attack_cooldown", "not_hunter", "interactable_piglin"]
+					"component_groups": ["piglin_adult", "alert_for_attack_targets", "ranged_unit", "attack_cooldown", "not_hunter", "interactable_piglin"]
 				}
 			},
 			"spawn_adult_melee": {
 				"add": {
-					"component_groups": ["piglin_adult", "zombification_sensor", "alert_for_attack_targets", "melee_unit", "attack_cooldown", "hunter", "interactable_piglin"]
+					"component_groups": ["piglin_adult", "alert_for_attack_targets", "melee_unit", "attack_cooldown", "hunter", "interactable_piglin"]
 				}
 			},
 			"spawn_adult_melee_no_hunting": {
 				"add": {
-					"component_groups": ["piglin_adult", "zombification_sensor", "alert_for_attack_targets", "melee_unit", "attack_cooldown", "not_hunter", "interactable_piglin"]
+					"component_groups": ["piglin_adult", "alert_for_attack_targets", "melee_unit", "attack_cooldown", "not_hunter", "interactable_piglin"]
 				}
 			},
 			"spawn_baby": {
@@ -978,32 +935,16 @@
 					{
 						"weight": 9,
 						"add": {
-							"component_groups": ["piglin_baby", "zombification_sensor", "not_hunter"]
+							"component_groups": ["piglin_baby", "not_hunter"]
 						}
 					},
 					{
 						"weight": 1,
 						"add": {
-							"component_groups": ["piglin_baby", "zombification_sensor", "piglin_jockey", "not_hunter"]
+							"component_groups": ["piglin_baby", "piglin_jockey", "not_hunter"]
 						}
 					}
 				]
-			},
-			"stop_zombification_event": {
-				"add": {
-					"component_groups": ["zombification_sensor"]
-				},
-				"remove": {
-					"component_groups": ["start_zombification"]
-				}
-			},
-			"start_zombification_event": {
-				"add": {
-					"component_groups": ["start_zombification"]
-				},
-				"remove": {
-					"component_groups": ["zombification_sensor"]
-				}
 			},
 			"become_angry_event": {
 				"add": {
@@ -1021,11 +962,6 @@
 			"attack_cooldown_complete_event": {
 				"remove": {
 					"component_groups": ["attack_cooldown"]
-				}
-			},
-			"become_zombie_event": {
-				"add": {
-					"component_groups": ["become_zombie"]
 				}
 			},
 			"important_block_destroyed_event": {
