@@ -1,0 +1,30 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Goblins Mod",
+		"description": "Goblins Mod Behavior Pack",
+		"uuid": "f3988329-ccfb-2e32-3e5b-9516d085f099",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 16, 0]
+	},
+	"metadata": {
+		"authors": ["zuz"],
+		"generated_with": {
+			"blockbench_entity_wizard": ["1.3.1"]
+		}
+	},
+	"modules": [
+		{
+			"description": "Behavior",
+			"version": [1, 0, 0],
+			"uuid": "c476f4a5-945e-aa49-7bc4-fcd0e9e90c3b",
+			"type": "data"
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "cb4111db-9244-70db-4d30-5feecae47c25",
+			"version": [1, 0, 0]
+		}
+	]
+}

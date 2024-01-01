@@ -1,0 +1,25 @@
+{
+	"entity_sounds": {
+		"entities": {
+			"zuz:goblins_mod": {
+				"events": {
+					"admire": "mob.piglin.admiring_item",
+					"ambient": "mob.piglin.ambient",
+					"angry": "mob.piglin.angry",
+					"attack": "mob.piglin.attack",
+					"celebrate": "mob.piglin.celebrate",
+					"death": "mob.piglin.death",
+					"hurt": "mob.piglin.hurt",
+					"jealous": "mob.piglin.jealous",
+					"retreat": "mob.piglin.retreat",
+					"step": {
+						"sound": "mob.piglin.step",
+						"volume": 0.35
+					}
+				},
+				"pitch": [0.8, 1.2],
+				"volume": 1
+			}
+		}
+	}
+}
