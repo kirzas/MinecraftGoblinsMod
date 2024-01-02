@@ -45,13 +45,15 @@
       "conditions": [
         {
           "condition": "random_difficulty_chance",
-          "default_chance": 1.0,
-          "peaceful": 0,
-          "easy": 0
+          "default_chance": 0.7,
+          "peaceful": 0.1,
+          "easy": 0.3,
+          "normal": 0.8,
+          "hard": 0.9
         },
         {
           "condition": "random_regional_difficulty_chance",
-          "max_chance": 0.15
+          "max_chance": 0.95
         }
       ],
       "tiers": {

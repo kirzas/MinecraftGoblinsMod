@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "minecraft:leather_cap",
+          "name": "minecraft:leather_helmet",
           "weight": 1,
           "functions": [
             {
@@ -18,9 +18,9 @@
               "conditions": [
                 {
                   "condition": "random_difficulty_chance",
-                  "default_chance": 0.5,
-                  "peaceful": 0,
-                  "hard": 0.6
+                  "default_chance": 0.7,
+                  "peaceful": 0.5,
+                  "hard": 0.9
                 }
               ],
               "rolls": 1,
