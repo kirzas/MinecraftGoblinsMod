@@ -14,8 +14,8 @@
 					"priority": 8,
 					"attack_interval_min": 1,
 					"attack_interval_max": 1,
-					"attack_radius": 8,
-					"attack_radius_min": 4,
+					"attack_radius": 14,
+					"attack_radius_min": 8,
 					"speed_multiplier": 1,
 					"target_in_sight_time": 0.1
 				},
@@ -56,7 +56,7 @@
 					"broadcast_anger_on_attack": true,
 					"broadcast_anger_on_being_attacked": true,
 					"broadcast_range": 16,
-					"broadcast_targets": ["piglin"],
+					"broadcast_targets": ["goblin"],
 					"calm_event": {
 						"event": "become_calm_event",
 						"target": "self"
@@ -67,7 +67,7 @@
 								"test": "is_family",
 								"subject": "other",
 								"operator": "!=",
-								"value": "piglin"
+								"value": "goblin"
 							},
 							{
 								"test": "has_component",
@@ -93,7 +93,7 @@
 					}
 				}
 			},
-			"piglin_baby": {
+			"goblin_baby": {
 				"minecraft:is_baby": {},
 				"minecraft:scale": {
 					"value": 0.5
@@ -109,7 +109,7 @@
 					"speed_multiplier": 1.1
 				}
 			},
-			"piglin_adult": {
+			"goblin_adult": {
 				"minecraft:group_size": {
 					"radius": 32,
 					"filters": {
@@ -121,7 +121,7 @@
 							},
 							{
 								"test": "is_family",
-								"value": "piglin"
+								"value": "goblin"
 							}
 						]
 					}
@@ -175,7 +175,7 @@
 					]
 				}
 			},
-			"interactable_piglin": {
+			"interactable_goblin": {
 				"minecraft:interact": {
 					"interactions": [
 						{
@@ -213,12 +213,12 @@
 			},
 			"hunter": {
 				"minecraft:type_family": {
-					"family": ["piglin", "piglin_hunter", "monster"]
+					"family": ["goblin", "piglin_hunter", "monster"]
 				}
 			},
 			"not_hunter": {
 				"minecraft:type_family": {
-					"family": ["piglin", "monster"]
+					"family": ["goblin", "monster"]
 				}
 			},
 			"alert_for_attack_targets": {
@@ -340,7 +340,7 @@
 					]
 				}
 			},
-			"piglin_jockey": {
+			"goblin_jockey": {
 				"minecraft:behavior.find_mount": {
 					"priority": 1,
 					"within_radius": 16,
@@ -912,22 +912,22 @@
 			},
 			"spawn_adult_ranged": {
 				"add": {
-					"component_groups": ["piglin_adult", "alert_for_attack_targets", "ranged_unit", "attack_cooldown", "hunter", "interactable_piglin"]
+					"component_groups": ["goblin_adult", "alert_for_attack_targets", "ranged_unit", "attack_cooldown", "hunter", "interactable_goblin"]
 				}
 			},
 			"spawn_adult_ranged_no_hunting": {
 				"add": {
-					"component_groups": ["piglin_adult", "alert_for_attack_targets", "ranged_unit", "attack_cooldown", "not_hunter", "interactable_piglin"]
+					"component_groups": ["goblin_adult", "alert_for_attack_targets", "ranged_unit", "attack_cooldown", "not_hunter", "interactable_goblin"]
 				}
 			},
 			"spawn_adult_melee": {
 				"add": {
-					"component_groups": ["piglin_adult", "alert_for_attack_targets", "melee_unit", "attack_cooldown", "hunter", "interactable_piglin"]
+					"component_groups": ["goblin_adult", "alert_for_attack_targets", "melee_unit", "attack_cooldown", "hunter", "interactable_goblin"]
 				}
 			},
 			"spawn_adult_melee_no_hunting": {
 				"add": {
-					"component_groups": ["piglin_adult", "alert_for_attack_targets", "melee_unit", "attack_cooldown", "not_hunter", "interactable_piglin"]
+					"component_groups": ["goblin_adult", "alert_for_attack_targets", "melee_unit", "attack_cooldown", "not_hunter", "interactable_goblin"]
 				}
 			},
 			"spawn_baby": {
@@ -935,13 +935,13 @@
 					{
 						"weight": 9,
 						"add": {
-							"component_groups": ["piglin_baby", "not_hunter"]
+							"component_groups": ["goblin_baby", "not_hunter"]
 						}
 					},
 					{
 						"weight": 1,
 						"add": {
-							"component_groups": ["piglin_baby", "piglin_jockey", "not_hunter"]
+							"component_groups": ["goblin_baby", "goblin_jockey", "not_hunter"]
 						}
 					}
 				]
@@ -974,12 +974,12 @@
 			},
 			"admire_item_started_event": {
 				"remove": {
-					"component_groups": ["interactable_piglin"]
+					"component_groups": ["interactable_goblin"]
 				}
 			},
 			"admire_item_stopped_event": {
 				"add": {
-					"component_groups": ["interactable_piglin"]
+					"component_groups": ["interactable_goblin"]
 				}
 			}
 		}
