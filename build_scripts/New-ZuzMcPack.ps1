@@ -1,4 +1,4 @@
-$rootPath = 'C:\Users\Argel\Dev\MinecraftGoblinsMod'
+$repositoryPath = 'C:\Users\Argel\Dev\MinecraftGoblinsMod'
 
 $packName = 'GoblinsMod'
 
@@ -9,13 +9,13 @@ $packTypes = @(
     'behavior'
 )
 
-$destinationFolderPath = Join-Path -Path $rootPath -ChildPath $destinationFolderName
+$destinationFolderPath = Join-Path -Path $repositoryPath -ChildPath $destinationFolderName
 if (-not (Test-Path -Path $destinationFolderPath)) {
     $null = New-Item -Path $destinationFolderPath -ItemType Directory
 }
 
 foreach ($type in $packTypes) {
-    $sourceSubfolderPath = Join-Path -Path $rootPath -ChildPath "${type}_packs"
+    $sourceSubfolderPath = Join-Path -Path $repositoryPath -ChildPath "${type}_packs"
     $sourceFullPath = Join-Path -Path $sourceSubfolderPath -ChildPath "$packName\*"
     $destinationFullPath = Join-Path -Path $destinationFolderPath -ChildPath "${type}_$packName.zip"
     $finalFileName = "${type}_$packName.mcpack"
