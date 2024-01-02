@@ -28,5 +28,7 @@ foreach ($type in $packTypes) {
     $destinationPackTypeSubfolderPath = Join-Path -Path $minecraftPath -ChildPath "${type}_packs"
     $destinationPackTypeFullPath = Join-Path -Path $destinationPackTypeSubfolderPath -ChildPath $packName
 
+    Remove-Item -Path $destinationPackTypeFullPath -Force -Recurse
+
     Expand-Archive -Path $sourcePackTypeSubfolderPath -Destination $destinationPackTypeFullPath -Force
 }
