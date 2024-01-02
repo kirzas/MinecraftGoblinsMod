@@ -1,102 +1,639 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "item",
-            "name": "minecraft:iron_sword",
-            "weight": 30,
-            "functions": [
-              {
-                "function": "looting_enchant",
-                "count": {
-                  "min": 0,
-                  "max": 1
-                }
-              },
-              {
-                "function": "enchant_random_gear",
-                "chance": 0.10
-              }
-            ]
-          },
-          {
-            "type": "item",
-            "name": "minecraft:stone_sword",
-            "weight": 5,
-            "functions": [
-              {
-                "function": "looting_enchant",
-                "count": {
-                  "min": 0,
-                  "max": 1
-                }
-              },
-              {
-                "function": "enchant_random_gear",
-                "chance": 0.05
-              }
-            ]
-          },
-          {
-            "type": "item",
-            "name": "minecraft:stone_axe",
-            "weight": 5,
-            "functions": [
-              {
-                "function": "looting_enchant",
-                "count": {
-                  "min": 0,
-                  "max": 1
-                }
-              },
-              {
-                "function": "enchant_random_gear",
-                "chance": 0.05
-              }
-            ]
-          },
-          {
-            "type": "item",
-            "name": "minecraft:iron_axe",
-            "weight": 10,
-            "functions": [
-              {
-                "function": "looting_enchant",
-                "count": {
-                  "min": 0,
-                  "max": 1
-                }
-              },
-              {
-                "function": "enchant_random_gear",
-                "chance": 0.05
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "conditions": [
-          {
-            "condition": "random_difficulty_chance",
-            "default_chance": 0.7,
-            "peaceful": 0.1,
-            "easy": 0.3,
-            "normal": 0.8,
-            "hard": 0.9
-          }
-        ],
-        "tiers": {
-          "initial_range": 1
-        },
-        "entries": [
-          {
-            "type": "loot_table",
-            "name": "loot_tables/entities/armor_set_goblin_melee.json"
-          }
-        ]
-      }
-    ]
-  }
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:diamond_sword",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.35
+            }
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:golden_sword",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.15
+            }
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:iron_sword",
+					"weight": 50,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.05
+            }
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:netherite_sword",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.35
+            }
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:stone_sword",
+					"weight": 40,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.05
+            }
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:diamond_axe",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.05
+            }
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:diamond_pickaxe",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.05
+            }
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:golden_axe",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.05
+            }
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:iron_axe",
+					"weight": 35,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.15
+            }
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:iron_pickaxe",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.05
+            }
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:netherite_axe",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.15
+            }
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:netherite_pickaxe",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.05
+            }
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:stone_axe",
+					"weight": 40,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.05
+            }
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:stone_pickaxe",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.05
+            }
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:shield",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.05
+            }
+					]
+				},
+				{
+					"type": "empty",
+					"weight": 1
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:chainmail_chestplate",
+					"weight": 30,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.05
+            }
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:diamond_chestplate",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.05
+            }
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:golden_chestplate",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.05
+            }
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:iron_chestplate",
+					"weight": 30,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.05
+            }
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:netherite_chestplate",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.05
+            }
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:leather_chestplate",
+					"weight": 40,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.05
+            }
+					]
+				},
+				{
+					"type": "empty",
+					"weight": 30
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:leather_leggings",
+					"weight": 35,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.05
+            }
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:chainmail_leggings",
+					"weight": 40,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.05
+            }
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:diamond_leggings",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.05
+            }
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:golden_leggings",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.05
+            }
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:iron_leggings",
+					"weight": 30,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.05
+            }
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:netherite_leggings",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.05
+            }
+					]
+				},
+				{
+					"type": "empty",
+					"weight": 100
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:chainmail_helmet",
+					"weight": 30,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.05
+            }
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:diamond_helmet",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.05
+            }
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:golden_helmet",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.05
+            }
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:iron_helmet",
+					"weight": 35,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.05
+            }
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:netherite_helmet",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.05
+            }
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:leather_helmet",
+					"weight": 40,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.05
+            }
+					]
+				},
+				{
+					"type": "empty",
+					"weight": 50
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:chainmail_boots",
+					"weight": 35,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.05
+            }
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:diamond_boots",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.05
+            }
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:golden_boots",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.05
+            }
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:iron_boots",
+					"weight": 40,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.05
+            }
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:leather_boots",
+					"weight": 45,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.05
+            }
+					]
+				},
+				{
+					"type": "item",
+					"name": "minecraft:netherite_boots",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						},
+            {
+              "function": "enchant_random_gear",
+              "chance": 0.05
+            }
+					]
+				},
+				{
+					"type": "empty",
+					"weight": 50
+				}
+			]
+		}
+	]
+}

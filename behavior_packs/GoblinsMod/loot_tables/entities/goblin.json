@@ -5,7 +5,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "diamond_sword",
+					"name": "minecraft:diamond_sword",
 					"weight": 3,
 					"functions": [
 						{
@@ -16,7 +16,7 @@
 				},
 				{
 					"type": "item",
-					"name": "golden_sword",
+					"name": "minecraft:golden_sword",
 					"weight": 5,
 					"functions": [
 						{
@@ -27,7 +27,7 @@
 				},
 				{
 					"type": "item",
-					"name": "iron_sword",
+					"name": "minecraft:iron_sword",
 					"weight": 30,
 					"functions": [
 						{
@@ -38,7 +38,7 @@
 				},
 				{
 					"type": "item",
-					"name": "netherite_sword",
+					"name": "minecraft:netherite_sword",
 					"weight": 1,
 					"functions": [
 						{
@@ -49,7 +49,7 @@
 				},
 				{
 					"type": "item",
-					"name": "stone_sword",
+					"name": "minecraft:stone_sword",
 					"weight": 40,
 					"functions": [
 						{
@@ -60,7 +60,7 @@
 				},
 				{
 					"type": "item",
-					"name": "diamond_axe",
+					"name": "minecraft:diamond_axe",
 					"weight": 3,
 					"functions": [
 						{
@@ -71,7 +71,7 @@
 				},
 				{
 					"type": "item",
-					"name": "diamond_pickaxe",
+					"name": "minecraft:diamond_pickaxe",
 					"weight": 3,
 					"functions": [
 						{
@@ -82,7 +82,7 @@
 				},
 				{
 					"type": "item",
-					"name": "golden_axe",
+					"name": "minecraft:golden_axe",
 					"weight": 5,
 					"functions": [
 						{
@@ -93,7 +93,7 @@
 				},
 				{
 					"type": "item",
-					"name": "iron_axe",
+					"name": "minecraft:iron_axe",
 					"weight": 35,
 					"functions": [
 						{
@@ -104,7 +104,7 @@
 				},
 				{
 					"type": "item",
-					"name": "iron_pickaxe",
+					"name": "minecraft:iron_pickaxe",
 					"weight": 25,
 					"functions": [
 						{
@@ -115,7 +115,7 @@
 				},
 				{
 					"type": "item",
-					"name": "netherite_axe",
+					"name": "minecraft:netherite_axe",
 					"weight": 1,
 					"functions": [
 						{
@@ -126,7 +126,7 @@
 				},
 				{
 					"type": "item",
-					"name": "netherite_pickaxe",
+					"name": "minecraft:netherite_pickaxe",
 					"weight": 1,
 					"functions": [
 						{
@@ -137,7 +137,7 @@
 				},
 				{
 					"type": "item",
-					"name": "stone_axe",
+					"name": "minecraft:stone_axe",
 					"weight": 40,
 					"functions": [
 						{
@@ -148,7 +148,7 @@
 				},
 				{
 					"type": "item",
-					"name": "stone_pickaxe",
+					"name": "minecraft:stone_pickaxe",
 					"weight": 20,
 					"functions": [
 						{
@@ -164,7 +164,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "shield",
+					"name": "minecraft:shield",
 					"weight": 1,
 					"functions": [
 						{
@@ -184,7 +184,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "chainmail_chestplate",
+					"name": "minecraft:chainmail_chestplate",
 					"weight": 30,
 					"functions": [
 						{
@@ -195,7 +195,7 @@
 				},
 				{
 					"type": "item",
-					"name": "diamond_chestplate",
+					"name": "minecraft:diamond_chestplate",
 					"weight": 3,
 					"functions": [
 						{
@@ -206,7 +206,7 @@
 				},
 				{
 					"type": "item",
-					"name": "golden_chestplate",
+					"name": "minecraft:golden_chestplate",
 					"weight": 5,
 					"functions": [
 						{
@@ -217,7 +217,7 @@
 				},
 				{
 					"type": "item",
-					"name": "iron_chestplate",
+					"name": "minecraft:iron_chestplate",
 					"weight": 30,
 					"functions": [
 						{
@@ -228,7 +228,7 @@
 				},
 				{
 					"type": "item",
-					"name": "netherite_chestplate",
+					"name": "minecraft:netherite_chestplate",
 					"weight": 1,
 					"functions": [
 						{
@@ -239,7 +239,7 @@
 				},
 				{
 					"type": "item",
-					"name": "leather_chestplate",
+					"name": "minecraft:leather_chestplate",
 					"weight": 40,
 					"functions": [
 						{
@@ -259,7 +259,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "leather_leggings",
+					"name": "minecraft:leather_leggings",
 					"weight": 35,
 					"functions": [
 						{
@@ -270,7 +270,7 @@
 				},
 				{
 					"type": "item",
-					"name": "chainmail_leggings",
+					"name": "minecraft:chainmail_leggings",
 					"weight": 40,
 					"functions": [
 						{
@@ -281,7 +281,7 @@
 				},
 				{
 					"type": "item",
-					"name": "diamond_leggings",
+					"name": "minecraft:diamond_leggings",
 					"weight": 3,
 					"functions": [
 						{
@@ -292,7 +292,7 @@
 				},
 				{
 					"type": "item",
-					"name": "golden_leggings",
+					"name": "minecraft:golden_leggings",
 					"weight": 5,
 					"functions": [
 						{
@@ -303,7 +303,7 @@
 				},
 				{
 					"type": "item",
-					"name": "iron_leggings",
+					"name": "minecraft:iron_leggings",
 					"weight": 30,
 					"functions": [
 						{
@@ -314,7 +314,7 @@
 				},
 				{
 					"type": "item",
-					"name": "netherite_leggings",
+					"name": "minecraft:netherite_leggings",
 					"weight": 1,
 					"functions": [
 						{
@@ -334,7 +334,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "chainmail_helmet",
+					"name": "minecraft:chainmail_helmet",
 					"weight": 30,
 					"functions": [
 						{
@@ -345,7 +345,7 @@
 				},
 				{
 					"type": "item",
-					"name": "diamond_helmet",
+					"name": "minecraft:diamond_helmet",
 					"weight": 3,
 					"functions": [
 						{
@@ -356,7 +356,7 @@
 				},
 				{
 					"type": "item",
-					"name": "golden_helmet",
+					"name": "minecraft:golden_helmet",
 					"weight": 5,
 					"functions": [
 						{
@@ -367,7 +367,7 @@
 				},
 				{
 					"type": "item",
-					"name": "iron_helmet",
+					"name": "minecraft:iron_helmet",
 					"weight": 35,
 					"functions": [
 						{
@@ -378,7 +378,7 @@
 				},
 				{
 					"type": "item",
-					"name": "netherite_helmet",
+					"name": "minecraft:netherite_helmet",
 					"weight": 1,
 					"functions": [
 						{
@@ -389,7 +389,7 @@
 				},
 				{
 					"type": "item",
-					"name": "leather_helmet",
+					"name": "minecraft:leather_helmet",
 					"weight": 40,
 					"functions": [
 						{
@@ -409,7 +409,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "chainmail_boots",
+					"name": "minecraft:chainmail_boots",
 					"weight": 35,
 					"functions": [
 						{
@@ -420,7 +420,7 @@
 				},
 				{
 					"type": "item",
-					"name": "diamond_boots",
+					"name": "minecraft:diamond_boots",
 					"weight": 3,
 					"functions": [
 						{
@@ -431,7 +431,7 @@
 				},
 				{
 					"type": "item",
-					"name": "golden_boots",
+					"name": "minecraft:golden_boots",
 					"weight": 5,
 					"functions": [
 						{
@@ -442,7 +442,7 @@
 				},
 				{
 					"type": "item",
-					"name": "iron_boots",
+					"name": "minecraft:iron_boots",
 					"weight": 40,
 					"functions": [
 						{
@@ -453,7 +453,7 @@
 				},
 				{
 					"type": "item",
-					"name": "leather_boots",
+					"name": "minecraft:leather_boots",
 					"weight": 45,
 					"functions": [
 						{
@@ -464,7 +464,7 @@
 				},
 				{
 					"type": "item",
-					"name": "netherite_boots",
+					"name": "minecraft:netherite_boots",
 					"weight": 1,
 					"functions": [
 						{
