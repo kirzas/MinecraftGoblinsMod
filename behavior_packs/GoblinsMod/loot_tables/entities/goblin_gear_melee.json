@@ -6,7 +6,7 @@
           {
             "type": "item",
             "name": "minecraft:iron_sword",
-            "weight": 10,
+            "weight": 30,
             "functions": [
               {
                 "function": "looting_enchant",
@@ -24,7 +24,43 @@
           {
             "type": "item",
             "name": "minecraft:stone_sword",
-            "weight": 3,
+            "weight": 5,
+            "functions": [
+              {
+                "function": "looting_enchant",
+                "count": {
+                  "min": 0,
+                  "max": 1
+                }
+              },
+              {
+                "function": "enchant_random_gear",
+                "chance": 0.05
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "name": "minecraft:stone_axe",
+            "weight": 5,
+            "functions": [
+              {
+                "function": "looting_enchant",
+                "count": {
+                  "min": 0,
+                  "max": 1
+                }
+              },
+              {
+                "function": "enchant_random_gear",
+                "chance": 0.05
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "name": "minecraft:iron_axe",
+            "weight": 10,
             "functions": [
               {
                 "function": "looting_enchant",
