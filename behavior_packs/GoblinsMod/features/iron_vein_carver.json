@@ -1,0 +1,11 @@
+{
+	"format_version": "1.16.100",
+
+	"minecraft:cave_carver_feature": {
+		"description": {
+			"identifier": "zuz:iron_vein_carver"
+		},
+        "fill_with": "minecraft:iron_ore",
+		"width_modifier": 10.0
+	}
+}

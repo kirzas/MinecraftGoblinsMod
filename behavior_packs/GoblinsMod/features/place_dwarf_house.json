@@ -1,0 +1,22 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:structure_template_feature": {
+    "description": {
+      "identifier": "zuz:place_dwarf_house"
+    },
+    "structure_name": "zuz:dwarf_house",
+    "adjustment_radius": 380,
+    "facing_direction": "random",
+    "constraints": {
+      "unburied": {},
+      "block_intersection": {
+        "block_allowlist": [
+          "minecraft:air",
+          "minecraft:grass",
+          "minecraft:dirt"
+        ]
+      },
+      "grounded": {}
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:snap_to_surface_feature": {
+    "description": {
+      "identifier": "zuz:surface_deepblock_pillar"
+    },
+    "feature_to_snap":  "zuz:deepblock_pillar",
+    "vertical_search_range":  112,
+    "surface": "floor",
+    "allow_air_placement": false,
+    "allow_underwater_placement": false
+  }
+}

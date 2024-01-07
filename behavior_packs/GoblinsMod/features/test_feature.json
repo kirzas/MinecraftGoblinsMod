@@ -1,0 +1,13 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:aggregate_feature": {
+      "description": {
+        "identifier": "zuz:test_feature_sequence"
+      },
+      "features": [
+        "monument_feature",
+        "scatter_white_flowers_feature",
+        "scatter_yellow_flower_feature"
+      ]
+    }
+  }

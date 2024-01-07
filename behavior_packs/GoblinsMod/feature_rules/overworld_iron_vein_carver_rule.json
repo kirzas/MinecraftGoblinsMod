@@ -1,0 +1,31 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "zuz:overworld_iron_vein_carver_rule",
+			"places_feature": "zuz:iron_vein_carver"
+		},
+		"conditions": {
+			"placement_pass": "first_pass",
+			"minecraft:biome_filter": [
+				{
+					"any_of": [
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "overworld"
+						},
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "overworld_generation"
+						}
+					]
+				}
+			]
+		},
+		"distribution": {
+			"iterations": 100
+        }
+	}
+}
