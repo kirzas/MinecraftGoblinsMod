@@ -1,2 +1,3 @@
 build/*
 **/*.mcpack
+build_scripts/settings.json

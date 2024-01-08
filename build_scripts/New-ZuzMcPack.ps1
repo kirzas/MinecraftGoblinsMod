@@ -1,6 +1,11 @@
-$repositoryPath = 'C:\Users\Argel\Dev\MinecraftGoblinsMod'
+[CmdletBinding()]
+Param(
+    [Parameter()]
+    [Setting]$Settings = (. $PSScriptRoot\Import-ZuZSetting.ps1)
+)
 
-$packName = 'GoblinsMod'
+$repositoryPath = $Settings.RepositoryPath
+$packName = $Settings.PackName
 
 $destinationFolderName = 'build'
 

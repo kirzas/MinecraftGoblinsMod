@@ -1,16 +1,22 @@
-$minecraftPath = 'C:\Users\Argel\AppData\Local\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang'
-$worldPath = 'C:\Users\Argel\AppData\Local\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\minecraftWorlds\TestWorld'
+[CmdletBinding()]
+Param(
+    [Parameter()]
+    [Setting]$Settings = (. $PSScriptRoot\Import-ZuZSetting.ps1)
+)
+
+$minecraftPath = $Settings.MinecraftPath
+$testWorldName = $Settings.TestWorldName
+$repositoryPath = $Settings.RepositoryPath
+$packName = $Settings.PackName
+
+$worldPath = Join-Path -Path $minecraftPath -ChildPath $testWorldName 
 
 $destinations = @(
     $minecraftPath
     $worldPath
 )
 
-$repositoryPath = 'C:\Users\Argel\Dev\MinecraftGoblinsMod'
-
 $buildFolderRelativePath = 'build'
-
-$packName = 'GoblinsMod'
 
 $packTypes = @(
     'resource'
