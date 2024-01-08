@@ -4,8 +4,8 @@
     "description": {
       "identifier": "zuz:place_dwarf_house"
     },
-    "structure_name": "zuz:dwarf_house",
-    "adjustment_radius": 380,
+    "structure_name": "mystructure:dwarf_house",
+    "adjustment_radius": 8,
     "facing_direction": "random",
     "constraints": {
       "unburied": {},
@@ -13,7 +13,8 @@
         "block_allowlist": [
           "minecraft:air",
           "minecraft:grass",
-          "minecraft:dirt"
+          "minecraft:dirt",
+          "minecraft:sand"
         ]
       },
       "grounded": {}
