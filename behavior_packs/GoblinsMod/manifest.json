@@ -5,7 +5,7 @@
 		"description": "Goblins Mod Behavior Pack",
 		"uuid": "f3988329-ccfb-2e32-3e5b-9516d085f099",
 		"version": [1, 0, 0],
-		"min_engine_version": [1, 16, 0]
+		"min_engine_version": [1, 20, 51]
 	},
 	"metadata": {
 		"authors": ["zuz"],
