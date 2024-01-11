@@ -2,7 +2,7 @@
 Minecraft mod with goblins
 
 # Start working on the pack
-With assuption you do that aon a windoes device.
+With assuption you do that aon a Windows device. You need PowerShell 7 to use build scripts.
 
 Create test world, default name for it is TestWorld.
 You will need to rename world folder to TestWorld as well.
