@@ -12,9 +12,7 @@
       "block_intersection": {
         "block_allowlist": [
           "minecraft:air",
-          "minecraft:grass",
-          "minecraft:dirt",
-          "minecraft:sand"
+          "minecraft:grass"
         ]
       },
       "grounded": {}
