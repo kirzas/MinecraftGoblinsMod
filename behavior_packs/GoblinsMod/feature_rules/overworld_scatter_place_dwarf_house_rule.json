@@ -1,0 +1,52 @@
+{
+	"format_version": "1.20.51",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "zuz:overworld_scatter_place_dwarf_house_rule",
+			"places_feature": "zuz:scatter_place_dwarf_house"
+		},
+		"conditions": {
+			"placement_pass": "after_surface_pass",
+			"minecraft:biome_filter": [
+				{
+					"any_of": [
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "overworld"
+						},
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "overworld_generation"
+						}
+					]
+				}
+			]
+		},
+		"distribution": {
+			"iterations": 10,
+			"x": {
+				"distribution": "uniform",
+				"extent": [
+					"-500",
+					"500"
+				]
+			},
+      		"y": {
+				"distribution": "uniform",
+				"extent": [
+					"50",
+					"250"
+				]
+			},
+      		"z": {
+				"distribution": "uniform",
+				"extent": [
+					"-500",
+					"500"
+				]
+			}
+        }
+	}
+}
