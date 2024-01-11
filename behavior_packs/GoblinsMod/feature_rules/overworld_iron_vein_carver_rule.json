@@ -1,12 +1,12 @@
 {
-	"format_version": "1.16.0",
+	"format_version": "1.20.51",
 	"minecraft:feature_rules": {
 		"description": {
 			"identifier": "zuz:overworld_iron_vein_carver_rule",
 			"places_feature": "zuz:iron_vein_carver"
 		},
 		"conditions": {
-			"placement_pass": "first_pass",
+			"placement_pass": "pregeneration_pass",
 			"minecraft:biome_filter": [
 				{
 					"any_of": [
@@ -20,12 +20,34 @@
 							"operator": "==",
 							"value": "overworld_generation"
 						}
+						
 					]
 				}
 			]
 		},
 		"distribution": {
-			"iterations": 100
+			"iterations": 100,
+			"x": {
+				"distribution": "uniform",
+				"extent": [
+					"0",
+					"16"
+				]
+			},
+      		"y": {
+				"distribution": "uniform",
+				"extent": [
+					"0",
+					"64"
+				]
+			},
+      		"z": {
+				"distribution": "uniform",
+				"extent": [
+					"0",
+					"16"
+				]
+			}
         }
 	}
 }

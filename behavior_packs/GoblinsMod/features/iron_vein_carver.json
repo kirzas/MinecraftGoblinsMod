@@ -1,11 +1,15 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.20.51",
 
 	"minecraft:cave_carver_feature": {
 		"description": {
 			"identifier": "zuz:iron_vein_carver"
 		},
         "fill_with": "minecraft:iron_ore",
-		"width_modifier": 10.0
+		"width_modifier": 2.0,
+		"height_limit": 150,
+		"horizontal_radius_multiplier": 2,
+		"vertical_radius_multiplier": 4,
+		"skip_carve_chance":80
 	}
 }
