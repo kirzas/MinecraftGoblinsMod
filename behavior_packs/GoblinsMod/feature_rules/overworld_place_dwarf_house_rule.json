@@ -2,7 +2,7 @@
 	"format_version": "1.16.0",
 	"minecraft:feature_rules": {
 		"description": {
-			"identifier": "zuz:overworld_place_dwarf_home_rule",
+			"identifier": "zuz:overworld_place_dwarf_house_rule",
 			"places_feature": "zuz:place_dwarf_house"
 		},
 		"conditions": {
