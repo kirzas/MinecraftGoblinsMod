@@ -1,0 +1,46 @@
+{
+    "goblinland": {
+      "format_version": "1.20.51",
+      "minecraft:climate": {
+        "downfall": 0.4,
+        "snow_accumulation": [ 0.0, 0.125 ],
+        "temperature": 0.8
+      },
+      "minecraft:overworld_height": {
+        "noise_type": "lowlands"
+      },
+      "minecraft:forced_features": {},
+      "minecraft:ignore_automatic_features": {},
+      "minecraft:surface_parameters": {
+        "top_material": "minecraft:grass",
+        "mid_material": "minecraft:dirt",
+        "sea_floor_material": "minecraft:gravel",
+        "foundation_material": "minecraft:stone",
+        "sea_floor_depth": 7,
+        "sea_material": "minecraft:water"
+      },
+      "minecraft:overworld_generation_rules": {
+        "hills_transformation": [
+          "forest_hills"
+        ],
+        "mutate_transformation": [
+          "plains",
+          "forest"
+        ],
+        "generate_for_climates": [
+          [ "medium", 125 ],
+          [ "warm", 100 ]
+        ],
+        "river_transformation": [
+          "river"
+        ],
+        "shore_transformation": [
+          "beach"
+        ]
+      },
+      "animal": {},
+      "monster": {},
+      "overworld": {},
+      "goblinland": {}
+    }
+  }
