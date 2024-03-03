@@ -7,9 +7,15 @@ Param(
     [string]$SettingsFileRelativePath = 'build_scripts',
 
     [Parameter()]
-    [string]$SettingsFileName = 'settings.json'
-)
+    [string]$SettingsFileName = 'settings.json',
 
-$settingsPath = Join-Path -Path $RepositoryPath -ChildPath 'build_scripts' -AdditionalChildPath $SettingsFileName
+    [Parameter()]
+    [string]$SettingsClassFileName = 'Setting.class.ps1'
+)
+$buildScriptsPath = Join-Path -Path $RepositoryPath -ChildPath 'build_scripts'
+$settingsPath =  Join-Path -Path $buildScriptsPath -ChildPath $SettingsFileName
+$settingsClasPath = Join-Path -Path $buildScriptsPath -ChildPath $SettingsClassFileName
+
+. $settingsClasPath
 
 Get-Content -Path $settingsPath -Raw -ErrorAction Stop | ConvertFrom-Json -ErrorAction Stop
